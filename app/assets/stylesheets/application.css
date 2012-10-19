@@ -1,0 +1,117 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap_and_overrides
+ *= require_self	
+ */
+
+#top_bg{
+	background: url("top_background.png") repeat;
+	height: 450px;
+	width: 100%;
+}
+
+#top_bg_blog{
+	background: url("top_background.png") repeat;
+	height: 100px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#blog-head-link{
+	margin-top: 30px;
+	padding-left: 70px;
+}
+
+#blog-head-link h2{
+	color: white;
+	text-align: right;
+}
+
+.top-nav{
+	margin-top: 30px;
+}
+
+.top-nav a{
+	color: white;
+	font-weight: bold;
+}
+
+.top-nav a:hover{
+	color: black;
+}
+
+#comment-top{
+	margin-top: 60px;
+}
+
+#comment-top h1{
+	color: white;
+	margin-bottom: 20px;
+}
+
+#comment-top p{
+	color: white;
+	margin-bottom: 20px;
+}
+
+.btn-margin-left{
+	margin-left: 10px;
+}
+
+#carousel-tag{
+	margin-top: 20px;
+	
+}
+#myCarousel{
+	width: 560px;
+	height: 260px;
+	-moz-box-shadow: 0 0 5px 2px #888;
+	-webkit-box-shadow: 0 0 5px 2px #888;
+	box-shadow: 0 0 5px 2px #888;
+}
+
+#divider-bg{
+	width: 100%;
+	height: 30px;
+	background: #e7e7e3;
+}
+
+#viewer-bg{
+	margin-top: 30px;
+}
+
+.viewer{
+	margin-top: 30px;
+	margin-left: 5px;
+}
+
+.well-bg{
+	background: #f7fd95;
+}
+hr{
+	border: solid 0.1em #2b2b2b;
+}
+
+#footer_bg{
+	margin-bottom: 20px;
+}
+
+#footer_bg p{
+	color: #a3a3a3;
+}
+
+textarea{ resize:none } 
+
+.margin-center{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}

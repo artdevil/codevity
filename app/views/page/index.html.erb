@@ -1,0 +1,114 @@
+<div id="top_bg">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <div id="top_header">
+          <%= link_to root_path do %>
+            <%= image_tag "codevity.png" %>
+          <% end %>
+        </div>
+      </div>
+      <div class="span5">
+        <ul class="nav nav-pills pull-right top-nav">
+          <li class="active"><%= link_to "Service", root_path %></li>
+          <li <%= 'class=active' if @title == "training" %>><%= link_to "Training", training_page_index_path %></li>
+          <li <%= 'class=active' if @title == "product" %>><%= link_to "Product", product_page_index_path %></li>
+          <li <%= 'class=active' if @title == "team" %>><%= link_to "Team", team_page_index_path %></li>
+          <li <%= 'class=active' if @title == "blog" %>><%= link_to "Blog", root_url(:host => "blog" + '.' + request.domain)%></li>
+          <li <%= 'class=active' if @title == "contact" %>><%= link_to "Contact", contact_page_index_path %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span6">
+        <div id="comment-top">
+          <h1>Giving your best experience for the latest technology on web application</h1>
+          <p>Dengan pengalaman serta didukung <i>programmers</i> yang berkompeten, cerdas, serta kreatif <br /> dapatkan kelebihan-kelebihan yang anda tidak temukan di <i>software house</i> yang lain.</p>
+          <%= link_to "Learn More", "#viewer-bg",:class => "btn btn-primary btn-large"  %><%= link_to "Stay On Us", contact_page_index_path, :class => "btn btn-primary btn-large btn-margin-left"%>
+        </div>
+      </div>
+      <div class="span6">
+        <div id="carousel-tag">
+          <div id="myCarousel" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <%= image_tag "android-banner.png" %>
+              </div>
+              <div class="item">
+                <%= image_tag "ruby.png" %>
+              </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="divider-bg">
+  &nbsp;
+</div>
+<div id="viewer-bg">
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+        <h2>What The Experience We Can Provide For You?</h2>
+      </div>
+      <div class="span4">
+      </div>
+    </div>
+    <div class="row">
+      <div class="span8">
+        <div class="row viewer">
+          <div class="span1">
+            <%= image_tag "open-source.png" %>
+          </div>
+          <div class="span5">
+            <h3>Open Source Software</h3>
+            <p>
+              Semenjak awal didirikan, kami berusaha semaksimal mungkin menggunakan teknologi <i>open source</i> sebagai <i>core</i> teknologi dalam pembuatan <i>software</i>.
+              Hal ini berguna agar menumbuhkan industri <i>software</i> yang kreatif serta menghargai hak cipta dari suatu karya.
+            </p>
+          </div>
+        </div>
+        <div class="row viewer">
+          <div class="span1">
+            <%= image_tag "creative.png" %>
+          </div>
+          <div class="span5">
+            <h3>Creative Software Development</h3>
+            <p>
+              sebagai jasa <i>Software House</i> yang mengedepankan kreatifitas, kami selalu berusaha menyelesaikan masalah perancangan <i>Software</i> yang membutuhkan <i>custom</i> dari <i>software</i> yang sudah ada dan umum digunakan sesuai dengan permintaan <i>costumer</i>. Kami melayani permintaan <i>costumer</i> dibidang <i>Web Application</i> serta <i>Mobile Development</i>
+            </p>
+          </div>
+        </div>
+        <div class="row viewer">
+          <div class="span1">
+            <%= image_tag "technic.png" %>
+          </div>
+          <div class="span5">
+            <h3>IT Consulting and Training</h3>
+            <p>
+              Didukung dengan <i>programmers</i> yang handal dan berpengalaman dibidang mereka masing-masing, kami menyediakan jasa konsultasi dan training untuk pelajar, mahasiswa, atau perusahaan, yang bisa membantu untuk menyelesaikan berbagai masalah dalam bidang pengembangan aplikasi, baik itu <i>Web Application</i> maupun <i>Mobile Application</i>. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="row viewer well well-bg">
+          <h3>Latest Activity</h3>
+          <div class='spread'>
+            <div class='twshare left'>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-text="software house yang berpengalaman di bidang web application dan mobile application" data-via="codevity">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count" show_faces="true" href="http://www.lvh.me/" fb_source="code with creativity" width="450" font="" send="true"></fb:like>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

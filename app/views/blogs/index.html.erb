@@ -1,0 +1,3 @@
+<% @blog.each do |f| %>
+  <%= link_to "test", root_url(:host => "blog" + '.' + request.domain + '/' + f.id.to_s)%>
+<% end %>
