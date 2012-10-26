@@ -9,9 +9,15 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require bootstrap_and_overrides
+ *= require social-share-button
  *= require_self	
  */
 
+.social-share-button{
+	text-align: right;
+	width: 100px;
+	float: right;
+}
 #top_bg{
 	background: url("top_background.png") repeat;
 	height: 450px;

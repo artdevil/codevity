@@ -14,7 +14,7 @@
           <li <%= 'class=active' if @title == "training" %>><%= link_to "Training", training_page_index_path %></li>
           <li <%= 'class=active' if @title == "product" %>><%= link_to "Product", product_page_index_path %></li>
           <li <%= 'class=active' if @title == "team" %>><%= link_to "Team", team_page_index_path %></li>
-          <li <%= 'class=active' if @title == "blog" %>><%= link_to "Blog", root_url(:host => "blog" + '.' + request.domain)%></li>
+          <!--<li <%= 'class=active' if @title == "blog" %>><%= link_to "Blog", root_url(:host => "blog" + '.' + request.domain)%></li> -->
           <li <%= 'class=active' if @title == "contact" %>><%= link_to "Contact", contact_page_index_path %></li>
         </ul>
       </div>
@@ -99,14 +99,15 @@
       </div>
       <div class="span4">
         <div class="row viewer well well-bg">
-          <h3>Latest Activity</h3>
-          <div class='spread'>
+          <h3>Share we on :</h3>
+          <!--<div class='spread'>
             <div class='twshare left'>
               <a href="https://twitter.com/share" class="twitter-share-button" data-text="software house yang berpengalaman di bidang web application dan mobile application" data-via="codevity">Tweet</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
             <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count" show_faces="true" href="http://www.lvh.me/" fb_source="code with creativity" width="450" font="" send="true"></fb:like>
-          </div>
+          </div> -->
+          <%= social_share_button_tag('codevity') %>
         </div>
       </div>
     </div>

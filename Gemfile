@@ -19,6 +19,7 @@ gem "twitter-bootstrap-rails"
 gem "ckeditor", "3.7.1"
 gem "social-buttons", git: "git://github.com/kristianmandrup/social-buttons.git"
 gem "tweet-button"
+gem 'social-share-button'
 
 
 # Gems used only for assets and not required
